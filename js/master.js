@@ -31,7 +31,7 @@ console.log(sconto);
 
 
 
-
+// COSA SUCCEDE DURANTE L'EVENT LISTENER:
 
 document.getElementById('submit-btn').addEventListener('click', function () {
     const kmToDoInputDomEle = document.getElementById('km-to-do');
@@ -40,7 +40,7 @@ document.getElementById('submit-btn').addEventListener('click', function () {
     const selectDomElement = document.getElementById('customer-range-age');
     let selectValue = (selectDomElement.value);
     console.log(selectValue);
-    
+
     let prezzoBase = (multiplier * kmToDo)
     
 
