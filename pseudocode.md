@@ -1,0 +1,31 @@
+*js-biglietto-treno-form
+
+-Inizializzo le variabili customer name e km to do andandoole a prendere dal DOM
+
+-Dichiaro soltanto la variabile kmToDo e la selectValue
+
+-Inizializzo la variabile btn andandoola a prendere dal DOM
+
+-COSA SUCCEDE DURANTE L'EVENT LISTENER:
+
+-assegnazione: KM TO DO E' IL MIO PARSE FLOAT DEL VALUE DELL' INPUT
+
+-assegnazione:SELECT VALUE E' IL VALUE DEL SELECTDOMELEMENT
+
+-DICHIARO ED ASSEGNO IL PREZZO BASE
+
+-IMPOSTO LO SCONTO UGUALE A 0
+
+-SE LA SELECT VALUE === MINORENNE
+   -ALLORA SCONTO = 0.20 * PREZZO BASE
+
+-ELSE IF SELECT VALUE === OVER 65
+   -ALLORA SCONTO = 0.40 * PREZZO BASE
+
+-DICHIARO ED ASSEGNO IL VALORE DEL PREZZO 
+
+-ARROTONDO IL PREZZO FINALE A DUE CIFRE DOPO LA VIRGOLA
+
+-RECUPERO IL VALORE "EURO" DAL DOM
+
+-STAMPO NELL' HTML IL PREZZO DEL BIGLETTO CON IL SIMBOLO DELL' EURO
