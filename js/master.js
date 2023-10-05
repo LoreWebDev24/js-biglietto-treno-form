@@ -32,6 +32,6 @@ console.log(sconto)
 
 // Inizializzo ed assegno la variabile del prezzo 
 
-let prezzo = (multiplier * kmToDo)- sconto
+let prezzo = (multiplier * kmToDo) - sconto
 
 console.log(prezzo)
