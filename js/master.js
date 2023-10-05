@@ -6,17 +6,13 @@ console.log(customerNameInputDomEle);
 
 let kmToDoInputDomEle = document.getElementById('km-to-do');
 
-let kmToDo
-
-let selectValue
-
 // Inizializzo la variabile btn andandoola a prendere dal DOM
 
 let buttonCreateDomEle = document.getElementById('submit-btn');
 
 console.log(buttonCreateDomEle);
 
-// Inizializzo la variabile btn andandoola a prendere dal DOM
+// Dichiaro ed Assegno il multiplier del prezzo per Km
 const multiplier = 0.21;
 
 console.log(multiplier);
@@ -25,6 +21,11 @@ console.log(multiplier);
 // COSA SUCCEDE DURANTE L'EVENT LISTENER:
 
 document.getElementById('submit-btn').addEventListener('click', function () {
+
+    // RESET AL CLICK (PER NON AVERE PREZZI STAMPATI ALL' INFINITO UNO DI SEGUITO L'ALTRO)
+    document.getElementById('prezzo').innerHTML = '';
+
+
     const kmToDoInputDomEle = document.getElementById('km-to-do');
     // KM TO DO E' IL MIO PARSE FLOAT DEL VALUE DELL' INPUT
     let kmToDo = parseFloat (kmToDoInputDomEle.value);
@@ -58,14 +59,12 @@ document.getElementById('submit-btn').addEventListener('click', function () {
     console.log("prezzoFixed", prezzoFixed);
 
     // RECUPERO IL VALORE "EURO" DAL DOM
-
-    const pContent = document.getElementById('prezzo').innerHTML;
     
     // STAMPO NELL' HTML IL PREZZO DEL BIGLETTO CON IL SIMBOLO DELL' EURO
     
-    document.getElementById('prezzo').innerHTML = `${prezzoFixed} ${pContent}`;
+    document.getElementById('prezzo').innerHTML = `${prezzoFixed} &euro;`;
 
-    // SECONDO MODO DI STAMPARE IL PREZZO DEL BIGLETTO
+    // SECONDO MODO DI STAMPARE IL PREZZO DEL BIGLETTO:
 
     // document.getElementById('prezzo').innerHTML = prezzoFixed + " " + pContent;
 });

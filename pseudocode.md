@@ -2,11 +2,13 @@
 
 -Inizializzo le variabili customer name e km to do andandoole a prendere dal DOM
 
--Dichiaro soltanto la variabile kmToDo e la selectValue
-
 -Inizializzo la variabile btn andandoola a prendere dal DOM
 
+-Dichiaro ed Assegno il multiplier del prezzo per Km
+
 -COSA SUCCEDE DURANTE L'EVENT LISTENER:
+
+-RESET AL CLICK (PER NON AVERE PREZZI STAMPATI ALL' INFINITO UNO DI SEGUITO L'ALTRO)
 
 -assegnazione: KM TO DO E' IL MIO PARSE FLOAT DEL VALUE DELL' INPUT
 

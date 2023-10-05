@@ -17,4 +17,11 @@ input,select,button {
     border: 0px;
     box-shadow: none;
     padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: lightgreen;
+    color: white;
+    font-weight: 800;
 }
