@@ -3,6 +3,13 @@ body {
     padding: 300px;
 }
 
+p {
+    margin:0;
+    padding:0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -10,6 +17,11 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.box {
+    flex-basis: 18%;
+    height: 100%;
 }
 
 input,select,button {
